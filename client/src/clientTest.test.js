@@ -8,12 +8,12 @@ let browser;
 
 describe("Client Tests", () => {
   beforeAll(async () => {
-    browser = await puppeteer.launch({
+    const browser = await puppeteer.launch({
       // headless: false,
       slowMo: 100,
     });
-    page1 = await browser.newPage();
-    page2 = await browser.newPage();
+    const page1 = await browser.newPage();
+    const page2 = await browser.newPage();
     useNock(page1, ["http://localhost:3000/"]);
     useNock(page2, ["http://localhost:3000/"]);
   });
@@ -109,10 +109,10 @@ describe("Client Tests", () => {
     const input = await page1.$("#changeUserInput");
     await input.click({ clickCount: 3 });
     await page1.type("#changeUserInput", "Amir");
-    const greenMessages = await page1.$$(".green");
-    const redMessages = await page1.$$(".red");
-    expect(greenMessages.length).toBe(2);
-    expect(redMessages.length).toBe(1);
+    const myMessages = await page1.$$(".my-msg");
+    const otherMessages = await page1.$$(".other-msg");
+    expect(myMessages.length).toBe(2);
+    expect(otherMessages.length).toBe(1);
   }, 30000);
   test("if messages from one tab shows on second tab", async () => {
     //page 2
