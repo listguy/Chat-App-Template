@@ -10,7 +10,7 @@ Don't worry, we already took care of the CSS, the dependencies, the React config
 
 ## Before You Start:
 - Run 'npm install' to install all dependencies. Do it both the client folder and the server folder.
-- If you want to run the tests, you can run 'npm run test'. Again, Do it both the client folder and the server folder.
+- If you want to run the tests, you can run 'npm run test'. Again, Do it both the client folder and the server folder (the tests for client can take a bit longer).
 - You can run 'npm start' in the client folder to start the client app.
 - You can run 'npm run dev' in the server folder to run the server with Nodemon.
 
