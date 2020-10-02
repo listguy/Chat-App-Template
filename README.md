@@ -52,7 +52,7 @@ The callback function will be activated in loops based on the time from the seco
 
 8. **Great work so far!** , now your messages state variable is constantly getting updated with all the messages in your server. \
 Now it is time to activate your input. \
-create a state variable called 'inputValue' and set it to an empty string. Add an onChange attribute to your input. Create a function to pass the inputs value to the inputValue state variable (use the event.target.value). Add a value attribute to your input and set it to the inputValue variable. \
+create a state variable called 'inputValue' and set it to an empty string. Add an onChange attribute to your input. Create a function to pass the inputs value to the inputValue state variable (use the event.target.value). Add a value attribute to your input and set it to the inputValue variable.
 
 9. Create a new function with the name 'postMessage' that gets a property (e).\
 In this function add a POST request to your ('/messages') endpoint and send it an object with params 'body' and 'user.\
