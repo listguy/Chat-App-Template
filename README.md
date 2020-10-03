@@ -12,7 +12,7 @@ Don't worry, we already took care of the CSS, the dependencies, the React config
 - Run 'npm install' to install all dependencies. Do it both the client folder and the server folder.
 - If you want to run the tests, you can run 'npm run test'. Again, Do it both the client folder and the server folder (the tests for client can take a bit longer).
 - You can run 'npm start' in the client folder to start the client app.
-- You can run 'npm run dev' in the server folder to run the server with Nodemon.
+- You can run 'npm run dev' in the server folder to run the server with [Nodemon](https://www.npmjs.com/package/nodemon).
 
         Enjoy Coding and Goodluck!!!
 
@@ -28,16 +28,16 @@ Now try to run the server tests. They should pass!
 
 
 ## Requirements Client: 
-1. We will start by creating a simple text input with the id = 'messageInput' and make it 'required'.
+1. We will start by creating a simple text input with the **id = 'messageInput'** and make it 'required'.
 
-2. Create a button with the id = 'sendButton' and set the type = 'submit' and value = 'Send'. This button will POST your message.
+2. Create a button with the **id = 'sendButton'** and set the type = 'submit' and value = 'Send'. This button will POST your message.
 
 3. Wrap both the button and the input in a "form" tag.
 
 4. Create a state variable called messages that starts with the value of an empty array.
 
-5. Create a useEffect with an empty dependencies array.
-Inside, create an interval.
+5. Create a [useEffect](https://reactjs.org/docs/hooks-effect.html) with an empty dependencies array.
+Inside, create an [interval](https://www.w3schools.com/jsref/met_win_setinterval.asp).
 That interval gets 2 parameters: \
 The first one is a callback function, \
 The second one is a number of milliseconds. \
@@ -48,7 +48,7 @@ The callback function will be activated in loops based on the time from the seco
   and then save the received data to a state variable called 'messages'. \
   You can use axios that is already installed in the projects dependencies.
 
-7. Create a state variable named 'user'. Inside the useEffect, create a random number between 1-2000 and set the user variable value to: 'Guest#' + randomNumber. That will be your username for now.
+7. Create a state variable named 'user'. Inside the useEffect, create a [random](https://www.w3schools.com/js/js_random.asp) number between 1-2000 and set the user variable value to: 'Guest#' + randomNumber. That will be your username for now.
 
 8. **Great work so far!** , now your messages state variable is constantly getting updated with all the messages in your server. \
 Now it is time to activate your input. \
@@ -60,15 +60,15 @@ The 'body' param should come from the inputValue state variable.\
 The 'user' param should contain the user state variable (the random number from before). \
 your 'message' object should look like this:\
 { body: inputValue, user: user}
-don't forget to add 'e.preventDefault()' in the beginning of the function to prevent the page from refreshing on submit. \
+don't forget to add ['e.preventDefault()'](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) in the beginning of the function to prevent the page from refreshing on submit. \
 Also, in the end of the function you should set the value of the inputValue state to be an empty string in order to clear the input. \
 Now all thats left is to add to your form the attribute 'onSubmit={postMessage}' 
 
-10. Create a new div below the form with a class = 'messagesContainer'. inside that div, take your messages state and map through it to print all of the messages in the server. Your print should have a div containing both the message.body and the message.user. That div should have a class name of 'msg'. \
+10. Create a new div below the form with a **class = 'messagesContainer'**. inside that div, take your messages state and [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) through it to print all of the messages in the server. Your print should have a div containing both the message.body and the message.user. That div should have a class name of **'msg'**. \
 Don't forget to give the div a 'key' attribute with a unique value.
 
 11. **WOW!** you should now have a working chat app! you can open the app on two windows and see how you can send messages from one to the other. the only thing missing is proper user names and a little bit of design.\
-Lets add a new input below the form with the id = 'changeUserInput' and set its value to the user state you have (the state that contains the random number). now also add an onChange() to that input to make sure you change the user state to the value of the input. now you can write in that input your name, and this will be your user name.
+Lets add a new input below the form with the **id = 'changeUserInput'** and set its value to the user state you have (the state that contains the random number). now also add an onChange() to that input to make sure you change the user state to the value of the input. now you can write in that input your name, and this will be your user name.
 
 12. The last thing to add is a different design to messages written by you and messages written by other users.\
 In your map function that prints all messages, change the className of the div being printed for each message, and set it to:\
