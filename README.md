@@ -9,8 +9,8 @@ You have all the requirements below + A gif that will help you understand our re
 Don't worry, we already took care of the CSS, the dependencies, the React configuration and the express configuration so chill and enjoy.
 
 ## Before You Start:
-- Run 'npm install' to install all dependencies. Do it both the client folder and the server folder.
-- If you want to run the tests, you can run 'npm run test'. Again, Do it both the client folder and the server folder (the tests for client can take a bit longer).
+- Run 'npm install' to install all dependencies. Do it on both the client folder and the server folder.
+- If you want to run the tests, you can run 'npm run test'. Again, Do it on both the client folder and the server folder (the tests for client can take a bit longer).
 - You can run 'npm start' in the client folder to start the client app.
 - You can run 'npm run dev' in the server folder to run the server with [Nodemon](https://www.npmjs.com/package/nodemon).
 
@@ -22,7 +22,7 @@ This array will contain objects with message data.
   
 2. Create a GET "/messages" endpoint that responds all the existing messages.
 
-3. Create a POST "/messages" endpoint that adds a new message to the exciting messages array. The message will be inside the body of the request and should like so: 
+3. Create a POST "/messages" endpoint that adds a new message to the existing messages array. The message will be inside the body of the request and should like so: 
 { body: 'message', user: 'name'}. 
 The end Point should respond back the string 'sent'.
 
@@ -50,7 +50,7 @@ The callback function will be activated in loops based on the time from the seco
   and then save the received data to a state variable called 'messages'. \
   You can use axios that is already installed in the projects dependencies.
 
-7. Create a state variable named 'user'. Inside the useEffect, create a [random](https://www.w3schools.com/js/js_random.asp) number between 1-2000 and set the user variable value to: 'Guest#' + randomNumber. That will be your username for now.
+7. Create a state variable named 'user' and set it to a default of an empty string. Inside the useEffect, create a [random](https://www.w3schools.com/js/js_random.asp) number between 1-2000 and set the user variable value to: 'Guest#' + randomNumber. That will be your username for now.
 
 8. **Great work so far!** , now your messages state variable is constantly getting updated with all the messages in your server. \
 Now it is time to activate your input. \
