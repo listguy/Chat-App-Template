@@ -22,7 +22,9 @@ This array will contain objects with message data.
   
 2. Create a GET "/messages" endpoint that responds all the existing messages.
 
-3. Create a POST "/messages" endpoint that adds a new message to the exciting messages array. The message will be inside the body of the request. The end Point should respond back the string 'sent'.
+3. Create a POST "/messages" endpoint that adds a new message to the exciting messages array. The message will be inside the body of the request and should like so: 
+{ body: 'message', user: 'name'}. 
+The end Point should respond back the string 'sent'.
 
 Now try to run the server tests. They should pass!
 
