@@ -8,12 +8,12 @@ let browser;
 
 describe("Client Tests", () => {
   beforeAll(async () => {
-    const browser = await puppeteer.launch({
+    browser = await puppeteer.launch({
       // headless: false,
       slowMo: 100,
     });
-    const page1 = await browser.newPage();
-    const page2 = await browser.newPage();
+    page1 = await browser.newPage();
+    page2 = await browser.newPage();
     useNock(page1, ["http://localhost:3000/"]);
     useNock(page2, ["http://localhost:3000/"]);
   });
