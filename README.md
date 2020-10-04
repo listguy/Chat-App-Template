@@ -9,12 +9,15 @@ You have all the requirements below + A gif that will help you understand our re
 Don't worry, we already took care of the CSS, the dependencies, the React configuration and the express configuration so chill and enjoy.
 
 ## Before You Start:
+- Clone [this](https://github.com/suvelocity/Chat-App-Template), in this repository you will work to complete the challenge. **Do not change the name of any file or folder, this will mess up the tests.
 - Run 'npm install' to install all dependencies. Do it on both the client folder and the server folder.
 - If you want to run the tests, you can run 'npm run test'. Again, Do it on both the client folder and the server folder (the tests for client can take a bit longer).
 - You can run 'npm start' in the client folder to start the client app.
 - You can run 'npm run dev' in the server folder to run the server with [Nodemon](https://www.npmjs.com/package/nodemon).
 
         Enjoy Coding and Goodluck!!!
+
+![hide](./EesqKbsuTm.gif)
 
 ## Requirements Server: 
 1. We will start by creating a 'messages' variable and set it to an empty array.
