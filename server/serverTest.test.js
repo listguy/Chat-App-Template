@@ -4,7 +4,7 @@ const app = require('./app');
 describe('Server Tests', () => {
   it('should add and get messages to and from messages array', async () => {
     const data = {
-      message: 'Hello',
+      body: 'Hello',
       user: 'Roy'
     };
     const firstRes = await request(app).get('/messages').expect(200);
