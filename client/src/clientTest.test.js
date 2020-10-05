@@ -21,15 +21,15 @@ describe("Client Tests", () => {
   beforeEach(() => {
     mockMessages = [
       {
-        message: "hello",
+        body: "hello",
         user: "Amir",
       },
       {
-        message: "hey",
+        body: "hey",
         user: "Matan",
       },
       {
-        message: "bye",
+        body: "bye",
         user: "Amir",
       },
     ];
